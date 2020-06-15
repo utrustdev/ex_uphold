@@ -1,0 +1,45 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Bearer ae1ae5fb06c5924a37d086f936423ff8b44d48ab"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 30000
+      },
+      "request_body": "",
+      "url": "https://api.uphold.com/v0/reserve/transactions/d5987c3d-ed88-4de0-b0c5-a31e67db3759"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"application\":null,\"createdAt\":\"2020-06-04T12:17:33.894Z\",\"denomination\":{\"amount\":\"0.000066\",\"currency\":\"ETH\"},\"fees\":[],\"id\":\"8feaa2c0-4897-4df6-9177-2f6bcfbfa23c\",\"params\":{\"currency\":\"ETH\",\"margin\":\"0.00\",\"pair\":\"ETHETH\",\"rate\":\"1.00\",\"txid\":\"0x0cc8xe6b04ee56d010d09e91c0b5439ffb45f327196f4fe6ffaf2e29cd357a8d\"},\"priority\":\"normal\",\"status\":\"completed\",\"type\":\"deposit\",\"destination\":{\"amount\":\"0.000066\",\"base\":\"0.000066\",\"commission\":\"0.00\",\"currency\":\"ETH\",\"fee\":\"0.00\",\"rate\":\"1.00\"},\"origin\":{\"amount\":\"0.000066\",\"base\":\"0.000066\",\"commission\":\"0.00\",\"currency\":\"ETH\",\"fee\":\"0.00\",\"rate\":\"1.00\",\"sources\":[]}}",
+      "headers": {
+        "Date": "Thu, 11 Apr 2019 14:51:40 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "798",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d9792b2cad18d625bbe95705611daf3cb1554994300; expires=Fri, 10-Apr-20 14:51:40 GMT; path=/; domain=.uphold.com; HttpOnly",
+        "Content-Security-Policy": "default-src \"none\"",
+        "X-Content-Security-Policy": "default-src \"none\"",
+        "X-WebKit-CSP": "default-src \"none\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Expect-CT": "max-age=0",
+        "Expect-Staple": "max-age=0; report-uri=\"https://uphold.report-uri.com/r/d/staple/reportOnly\"",
+        "Request-Id": "123dc7a749df3abd-PRG",
+        "Vary": "Origin",
+        "Rate-Limit-Remaining": "29976",
+        "Rate-Limit-Reset": "1554994532",
+        "Rate-Limit-Total": "30000",
+        "Server": "cloudflare",
+        "CF-RAY": "123dc7a749df3abd-PRG"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

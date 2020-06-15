@@ -1,0 +1,45 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Bearer ae1ae5fb06c5924a37d086f936423ff8b44d48ab"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 30000
+      },
+      "request_body": "",
+      "url": "https://api-sandbox.uphold.com/v0/me/cards/invalid/transactions"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"code\":\"not_found\",\"message\":\"Not Found\"}",
+      "headers": {
+        "Date": "Thu, 11 Apr 2019 15:13:57 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "42",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=dc76032148f278e93d86a95f3ebdc73e31554995637; expires=Fri, 10-Apr-20 15:13:57 GMT; path=/; domain=.uphold.com; HttpOnly",
+        "Content-Security-Policy": "default-src \"none\"",
+        "X-Content-Security-Policy": "default-src \"none\"",
+        "X-WebKit-CSP": "default-src \"none\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Expect-CT": "max-age=0",
+        "Expect-Staple": "max-age=0; report-uri=\"https://uphold.report-uri.com/r/d/staple/reportOnly\"",
+        "Request-Id": "123de84bfb8b7abd-PRG",
+        "Vary": "Origin",
+        "Rate-Limit-Remaining": "29943",
+        "Rate-Limit-Reset": "1554995651",
+        "Rate-Limit-Total": "30000",
+        "Server": "cloudflare",
+        "CF-RAY": "123de84bfb8b7abd-PRG"
+      },
+      "status_code": 404,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Bearer ae1ae5fb06c5924a37d086f936423ff8b44d48ab"
+      },
+      "method": "get",
+      "options": {
+        "recv_timeout": 30000
+      },
+      "request_body": "",
+      "url": "https://api-sandbox.uphold.com/v0/me/cards/12121ed6-4d1f-4fce-good-302a303bd234"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"address\":{\"wire\":\"UH263F859C\",\"bitcoin\":\"msbLNpBxiyyfFfPPnRAbnoNqFD9qNLSzmn\"},\"available\":\"0.00\",\"balance\":\"0.00\",\"currency\":\"EUR\",\"id\":\"12121ed6-4d1f-4fce-good-302a303bd234\",\"label\":\"uphold_api_unit_test_btc_address\",\"lastTransactionAt\":null,\"settings\":{\"position\":13,\"protected\":false,\"starred\":false},\"normalized\":[{\"available\":\"0.00\",\"balance\":\"0.00\",\"currency\":\"CHF\"}],\"wire\":[{\"accountName\":\"Uphold Europe Limited\",\"address\":{\"line1\":\"Tartu mnt 2\",\"line2\":\"100000 Tallinn, Estonia\"},\"bic\":\"ABCBEE22\",\"currency\":\"EUR\",\"iban\":\"BB12 7722 7711 0170 0110\",\"name\":\"AS LHV Pank\"},{\"accountName\":\"Uphold HQ, Inc.\",\"accountNumber\":\"0333224341\",\"address\":{\"line1\":\"9959 Broadway\",\"line2\":\"New York, NY 10012\"},\"bic\":\"ABCDUS33\",\"currency\":\"USD\",\"name\":\"Metropolitan Bank\",\"routingNumber\":\"026013312\"}]}",
+      "headers": {
+        "Date": "Thu, 11 Apr 2019 14:51:40 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "798",
+        "Connection": "keep-alive",
+        "Set-Cookie": "__cfduid=d9792b2cad18d625bbe95705611daf3cb1554994300; expires=Fri, 10-Apr-20 14:51:40 GMT; path=/; domain=.uphold.com; HttpOnly",
+        "Content-Security-Policy": "default-src \"none\"",
+        "X-Content-Security-Policy": "default-src \"none\"",
+        "X-WebKit-CSP": "default-src \"none\"",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Expect-CT": "max-age=0",
+        "Expect-Staple": "max-age=0; report-uri=\"https://uphold.report-uri.com/r/d/staple/reportOnly\"",
+        "Request-Id": "4c5dc7a749df3e26-PRG",
+        "Vary": "Origin",
+        "Rate-Limit-Remaining": "29976",
+        "Rate-Limit-Reset": "1554994532",
+        "Rate-Limit-Total": "30000",
+        "Server": "cloudflare",
+        "CF-RAY": "12d12da749df3e26-PRG"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

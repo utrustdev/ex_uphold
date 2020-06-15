@@ -10,7 +10,7 @@ by adding `ex_uphold` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:ex_uphold, "~> 0.1.0"}
+    {:ex_uphold, "~> 0.0.2"}
   ]
 end
 ```

@@ -10,7 +10,7 @@
         "recv_timeout": 30000
       },
       "request_body": "",
-      "url": "https://api.uphold.com/v0/reserve/transactions/30298ed6"
+      "url": "https://api-sandbox.uphold.com/v0/reserve/transactions/30298ed6"
     },
     "response": {
       "binary": false,

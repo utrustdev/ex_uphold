@@ -11,7 +11,7 @@ defmodule ExUphold.Api do
   def get_transaction_details(transaction_id) do
     Tesla.get(
       client(),
-      "https://api.uphold.com/v0/reserve/transactions/#{transaction_id}"
+      "v0/reserve/transactions/#{transaction_id}"
     )
     |> prepare_response()
   end

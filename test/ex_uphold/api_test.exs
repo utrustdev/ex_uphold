@@ -5,8 +5,7 @@ defmodule ExUphold.ApiTest do
   describe "get_card_details/1" do
     test "gets details of an existing card" do
       use_cassette "get_card_details" do
-        {:ok, card} =
-          ExUphold.Api.get_card_details("12121ed6-4d1f-4fce-good-302a303bd234")
+        {:ok, card} = ExUphold.Api.get_card_details("12121ed6-4d1f-4fce-good-302a303bd234")
 
         assert %{"id" => _, "currency" => "EUR", "address" => %{}} = card
       end
@@ -36,8 +35,7 @@ defmodule ExUphold.ApiTest do
                    "margin" => "0.00",
                    "pair" => "ETHETH",
                    "rate" => "1.00",
-                   "txid" =>
-                     "0x0cc8xe6b04ee56d010d09e91c0b5439ffb45f327196f4fe6ffaf2e29cd357a8d"
+                   "txid" => "0x0cc8xe6b04ee56d010d09e91c0b5439ffb45f327196f4fe6ffaf2e29cd357a8d"
                  },
                  "status" => "completed",
                  "type" => "deposit",
@@ -61,15 +59,13 @@ defmodule ExUphold.ApiTest do
   describe "list_card_transactions/1" do
     test "gets list of transactions for a given card" do
       use_cassette "get_eth_card_transactions" do
-        {:ok, txs} =
-          ExUphold.Api.list_card_transactions("d1cc6aad-9c96-4cc0-b5d0-313b9fffffff")
+        {:ok, txs} = ExUphold.Api.list_card_transactions("d1cc6aad-9c96-4cc0-b5d0-313b9fffffff")
 
         tx =
           Enum.find(txs, fn
             %{
               "params" => %{
-                "txid" =>
-                  "0xd594a1ff5326dc34ace1950b768317bb70b64d518a306b6b4a22b66a430d015f"
+                "txid" => "0xd594a1ff5326dc34ace1950b768317bb70b64d518a306b6b4a22b66a430d015f"
               }
             } ->
               true
@@ -82,8 +78,7 @@ defmodule ExUphold.ApiTest do
                  "denomination" => %{"pair" => "ETHETH"},
                  "destination" => %{"amount" => "142.77"},
                  "params" => %{
-                   "txid" =>
-                     "0xd594a1ff5326dc34ace1950b768317bb70b64d518a306b6b4a22b66a430d015f"
+                   "txid" => "0xd594a1ff5326dc34ace1950b768317bb70b64d518a306b6b4a22b66a430d015f"
                  }
                } = tx
       end

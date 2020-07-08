@@ -37,8 +37,7 @@ defmodule ExUphold.Api do
     do: [
       {Tesla.Middleware.BaseUrl, base_url(os_env!("UPHOLD_ENV"))},
       {Tesla.Middleware.JSON, []},
-      {Tesla.Middleware.Headers,
-       [{"Authorization", "Bearer #{os_env!("UPHOLD_ACCESS_TOKEN")}"}]}
+      {Tesla.Middleware.Headers, [{"Authorization", "Bearer #{os_env!("UPHOLD_ACCESS_TOKEN")}"}]}
     ]
 
   defp base_url("production"), do: "https://api.uphold.com"

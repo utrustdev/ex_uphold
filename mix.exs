@@ -6,7 +6,7 @@ defmodule ExUphold.MixProject do
       app: :ex_uphold,
       version: "0.0.3",
       elixir: "~> 1.8",
-      build_embedded: Mix.env == :prod,
+      build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: description(),

@@ -20,6 +20,9 @@ end
 - **UPHOLD_ACCESS_TOKEN**: Uphold API token (obtained in Uphold settings)
 - **UPHOLD_ENV**: Uphold API environment (production, sandbox) 
 
+## Tests
+- For tests you can use [ExUphold.FakeApi](lib/ex_uphold/fake_api.ex)
+
 ## TODO: 
 
 - [ ] Add support for more API requests (cards, transactions, etc.)
